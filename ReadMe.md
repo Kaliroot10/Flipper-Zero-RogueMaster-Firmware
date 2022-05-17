@@ -1,7 +1,7 @@
 
-**[Flipper Zero Firmware](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/ReadMe.md) <= READ THIS READ ME
+# [Flipper Zero Firmware](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/ReadMe.md) <= READ THIS READ ME
 
-with some TX Unlock/[MuddleBox](https://github.com/MuddledBox/flipperzero-firmware)/[Unleashed](https://github.com/Eng1n33r/flipperzero-firmware/tree/v0.58.1-CodeGrabber) changes and added plugins.**
+# with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware)/[Unleashed](https://github.com/Eng1n33r/flipperzero-firmware/tree/v0.58.1-CodeGrabber) changes + plugins.
 
 Latest Updates:
 - Fixed stopwatch sound options
@@ -19,15 +19,6 @@ Latest Updates:
 - Add a folder to SD card named `wav_player` (for 8bit 2ch unsigned wav files) 
 - Add a folder to SD card named `music_player` (FMF and RTTTL/TXT files)
 
-Plugins:
-- [Clock/Stopwatch (By CompaqDisc, Stopwatch & sound alert by me)](https://gist.github.com/CompaqDisc/4e329c501bd03c1e801849b81f48ea61)
-- [Flappy Bird (By DroomOne)](https://github.com/DroomOne/flipperzero-firmware/tree/dev/applications/flappy_bird)
-- [Tetris (By jeffplang)](https://github.com/jeffplang/flipperzero-firmware/tree/tetris_game/applications/tetris_game)
-- [WAV Player (By Zlo)](https://github.com/flipperdevices/flipperzero-firmware/tree/zlo/wav-player)
-- [RF Remote (By jimilinuxguy)](https://github.com/jimilinuxguy/flipperzero-universal-rf-remote/tree/main/applications/universal_rf)
-- [Touch Tunes Remote (By jimilinuxguy)](https://github.com/jimilinuxguy/flipperzero-universal-rf-remote/tree/028d615c83f059bb2c905530ddb3d4efbd3cbcae/applications/jukebox)
-- [Spectrum Analyzer (By jolcese)](https://github.com/jolcese/flipperzero-firmware/tree/spectrum/applications/spectrum_analyzer)
-
 Special shout out to these libraries for giving us more fun:
 - https://github.com/Gioman101/FlipperAmiibo
 - https://github.com/jimilinuxguy/flipperzero-touchtunes
@@ -37,6 +28,15 @@ Special shout out to these libraries for giving us more fun:
 - https://github.com/neverfa11ing/FlipperMusicRTTTL
 - https://github.com/UberGuidoZ/Flipper
 - https://github.com/UberGuidoZ/Flipper-IRDB
+
+Plugins:
+- [Clock/Stopwatch (By CompaqDisc, Stopwatch & sound alert by me)](https://gist.github.com/CompaqDisc/4e329c501bd03c1e801849b81f48ea61)
+- [Flappy Bird (By DroomOne)](https://github.com/DroomOne/flipperzero-firmware/tree/dev/applications/flappy_bird)
+- [Tetris (By jeffplang)](https://github.com/jeffplang/flipperzero-firmware/tree/tetris_game/applications/tetris_game)
+- [WAV Player (By Zlo)](https://github.com/flipperdevices/flipperzero-firmware/tree/zlo/wav-player)
+- [RF Remote (By jimilinuxguy)](https://github.com/jimilinuxguy/flipperzero-universal-rf-remote/tree/main/applications/universal_rf)
+- [Touch Tunes Remote (By jimilinuxguy)](https://github.com/jimilinuxguy/flipperzero-universal-rf-remote/tree/028d615c83f059bb2c905530ddb3d4efbd3cbcae/applications/jukebox)
+- [Spectrum Analyzer (By jolcese)](https://github.com/jolcese/flipperzero-firmware/tree/spectrum/applications/spectrum_analyzer)
 
 Changes from main: 
  - applications/applications.c
