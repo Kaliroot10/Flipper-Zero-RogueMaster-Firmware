@@ -5,15 +5,15 @@ Latest Updates:
 - Merged new updates from main.
 
 **Special Instructions:**
-- Download these files to place into subghz/assets folder on your SD card. Change the two _map files to contain the location of your specific subghz files.
-- - assets/resources/subghz/assets/universal_rf_map
-- - assets/resources/subghz/assets/touchtunes_map
-- - assets/resources/subghz/assets/setting_user
-- - assets/resources/subghz/assets/setting_frequency_analyzer_user
-- Download this file to place into nfc/assets folder on your SD card. 
-- - assets/resources/nfc/assets/mf_classic_dict.nfc
-- Add a folder to SD card for 'wav_player' (for 8bit 2ch unsigned wav files) 
-- Add a folder to SD card for 'music_player' (fmf and rtttl files)
+- Download these files into the subghz/assets folder on your SD card. Edit the two `_map` files to contain your specific subghz (.SUB) files.
+- - [assets/resources/subghz/assets/universal_rf_map](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/universal_rf_map)
+- - [assets/resources/subghz/assets/touchtunes_map](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/touchtunes_map)
+- - [assets/resources/subghz/assets/setting_user](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/setting_user)
+- - [assets/resources/subghz/assets/setting_frequency_analyzer_user](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/setting_frequency_analyzer_user)
+- Download this file into the nfc/assets folder on your SD card. 
+- - [assets/resources/nfc/assets/mf_classic_dict.nfc](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/nfc/assets/mf_classic_dict.nfc)
+- Add a folder to SD card named `wav_player` (for 8bit 2ch unsigned wav files) 
+- Add a folder to SD card named `music_player` (FMF and RTTTL/TXT files)
 
 Plugins:
 - [Clock/Stopwatch (By CompaqDisc, Stopwatch & sound alert by me)](https://gist.github.com/CompaqDisc/4e329c501bd03c1e801849b81f48ea61)
