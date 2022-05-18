@@ -4,9 +4,9 @@
 #include <furi.h>
 
 #include "../subghz_i.h"
+#define TAG "FA"
 
-#define SUBGHZ_FREQUENCY_ANALYZER_THRESHOLD -70.0f
-
+#define SUBGHZ_FREQUENCY_ANALYZER_THRESHOLD -65.0f
 struct SubGhzFrequencyAnalyzerWorker {
     FuriThread* thread;
 
@@ -117,6 +117,7 @@ static int32_t subghz_frequency_analyzer_worker_thread(void* context) {
         }
 
         if(frequency_rssi.rssi > SUBGHZ_FREQUENCY_ANALYZER_THRESHOLD) {
+            // FURI_LOG_D(TAG, ">:%u:%f", frequency_rssi.frequency, (double)frequency_rssi.rssi);
             //  -0.5 ... 433.92 ... +0.5
             frequency_start = frequency_rssi.frequency - 500000;
 
@@ -129,7 +130,7 @@ static int32_t subghz_frequency_analyzer_worker_thread(void* context) {
             furi_hal_spi_release(&furi_hal_spi_bus_handle_subghz);
 
             //step 25KHz
-            for(uint32_t i = frequency_start; i < frequency_start + 500000; i += 25000) {
+            for(uint32_t i = frequency_start; i < frequency_rssi.frequency + 500000; i += 25000) {
                 if(furi_hal_subghz_is_frequency_valid(i)) {
                     furi_hal_spi_acquire(&furi_hal_spi_bus_handle_subghz);
                     cc112x_switch_to_idle(&furi_hal_spi_bus_handle_subghz);
