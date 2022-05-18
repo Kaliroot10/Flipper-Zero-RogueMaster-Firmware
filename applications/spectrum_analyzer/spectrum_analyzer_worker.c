@@ -25,7 +25,7 @@ struct SpectrumAnalyzerWorker {
 
 /* set the channel bandwidth */
 void spectrum_analyzer_worker_set_filter(SpectrumAnalyzerWorker* instance) {
-    uint8_t filter_config[2][2] = {
+    uint16_t filter_config[2][2] = {
         {CC1101_MDMCFG4, 0},
         {0, 0},
     };
@@ -60,7 +60,7 @@ static int32_t spectrum_analyzer_worker_thread(void* context) {
     furi_hal_subghz_flush_rx();
     furi_hal_subghz_rx();
 
-    static const uint8_t radio_config[][2] = {
+    static const uint16_t radio_config[][2] = {
         {CC1101_FSCTRL1, 0x12},
         {CC1101_FSCTRL0, 0x00},
 
