@@ -19,7 +19,7 @@ static volatile SubGhzState furi_hal_subghz_state = SubGhzStateInit;
 static volatile SubGhzRegulation furi_hal_subghz_regulation = SubGhzRegulationTxRx;
 static volatile FuriHalSubGhzPreset furi_hal_subghz_preset = FuriHalSubGhzPresetIDLE;
 
-static const uint16_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
     // https://e2e.ti.com/support/wireless-connectivity/sub-1-ghz-group/sub-1-ghz/f/sub-1-ghz-forum/382066/cc1101---don-t-know-the-correct-registers-configuration
 
     /* GPIO GD0 */
@@ -66,7 +66,7 @@ static const uint16_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
     {0, 0},
 };
 
-static const uint16_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
     // https://e2e.ti.com/support/wireless-connectivity/sub-1-ghz-group/sub-1-ghz/f/sub-1-ghz-forum/382066/cc1101---don-t-know-the-correct-registers-configuration
 
     /* GPIO GD0 */
@@ -116,7 +116,7 @@ static const uint16_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint16_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
 
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x0D}, // GD0 as async serial data output/input
@@ -160,7 +160,7 @@ static const uint16_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint16_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
 
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x0D}, // GD0 as async serial data output/input
@@ -204,7 +204,7 @@ static const uint16_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint16_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x06},
 
@@ -243,7 +243,7 @@ static const uint16_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint16_t furi_hal_subghz_preset_gfsk_9_99kb_async_regs[][2] = {
+static const uint8_t furi_hal_subghz_preset_gfsk_9_99kb_async_regs[][2] = {
 
     {CC1101_IOCFG0, 0x06}, //GDO0 Output Pin Configuration
     {CC1101_FIFOTHR, 0x47}, //RX FIFO and TX FIFO Thresholds
@@ -418,7 +418,7 @@ void furi_hal_subghz_load_preset(FuriHalSubGhzPreset preset) {
     furi_hal_subghz_preset = preset;
 }
 
-void furi_hal_subghz_load_registers(const uint16_t data[][2]) {
+void furi_hal_subghz_load_registers(const uint8_t data[][2]) {
     furi_hal_spi_acquire(&furi_hal_spi_bus_handle_subghz);
     cc1101_reset(&furi_hal_spi_bus_handle_subghz);
     uint32_t i = 0;
