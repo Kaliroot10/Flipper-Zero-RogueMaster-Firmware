@@ -1,7 +1,7 @@
 
 # [Flipper Zero Firmware](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/ReadMe.md) <= READ THIS READ ME
 - FLASH STOCK FIRST BEFORE UPDATING TO CUSTOM FIRMWARE
-# with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware) changes + plugins.
+# with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware)/[Unleashed](https://github.com/Eng1n33r/flipperzero-firmware/tree/v0.58.1-CodeGrabber) changes + plugins.
 
 Latest Updates:
 - Fixed stopwatch sound options
@@ -55,7 +55,16 @@ Changes from main:
  - applications/spectrum_analyzer/spectrum_analyzer.h
  - applications/spectrum_analyzer/spectrum_analyzer_worker.c
  - applications/spectrum_analyzer/spectrum_analyzer_worker.h
+ - applications/subghz/helpers/subghz_custom_event.h
+ - applications/subghz/scenes/subghz_scene_config.h
  - applications/subghz/scenes/subghz_scene_read_raw.c
+ - applications/subghz/scenes/subghz_scene_receiver_info.c
+ - applications/subghz/scenes/subghz_scene_set_cnt.c
+ - applications/subghz/scenes/subghz_scene_set_fix.c
+ - applications/subghz/scenes/subghz_scene_set_seed.c
+ - applications/subghz/scenes/subghz_scene_set_type.c
+ - applications/subghz/subghz.c
+ - applications/subghz/subghz_i.h
  - applications/subghz/subghz_setting.c
  - applications/tetris_game/tetris_game.c
  - applications/universal_rf/universal_rf.c
@@ -121,4 +130,16 @@ Changes from main:
  - assets/resources/subghz/assets/universal_rf_map
  - firmware/targets/f7/furi_hal/furi_hal_subghz.c
  - firmware/targets/f7/target.mk
+ - lib/subghz/blocks/generic.h
+ - lib/subghz/protocols/faac_slh.c
+ - lib/subghz/protocols/faac_slh.h
+ - lib/subghz/protocols/keeloq.c
+ - lib/subghz/protocols/keeloq.h
+ - lib/subghz/protocols/keeloq_common.c
+ - lib/subghz/protocols/keeloq_common.h
+ - lib/subghz/protocols/nice_flor_s.c
+ - lib/subghz/protocols/nice_flor_s.h
+ - lib/subghz/protocols/star_line.c
+ - lib/subghz/protocols/star_line.h
+ - lib/subghz/subghz_keystore.c
  - lib/toolbox/random_name.c
