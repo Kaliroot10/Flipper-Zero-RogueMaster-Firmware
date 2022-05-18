@@ -19,7 +19,7 @@ static volatile SubGhzState furi_hal_subghz_state = SubGhzStateInit;
 static volatile SubGhzRegulation furi_hal_subghz_regulation = SubGhzRegulationTxRx;
 static volatile FuriHalSubGhzPreset furi_hal_subghz_preset = FuriHalSubGhzPresetIDLE;
 
-static const uint8_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
     // https://e2e.ti.com/support/wireless-connectivity/sub-1-ghz-group/sub-1-ghz/f/sub-1-ghz-forum/382066/cc1101---don-t-know-the-correct-registers-configuration
 
     /* GPIO GD0 */
@@ -66,7 +66,7 @@ static const uint8_t furi_hal_subghz_preset_ook_270khz_async_regs[][2] = {
     {0, 0},
 };
 
-static const uint8_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
     // https://e2e.ti.com/support/wireless-connectivity/sub-1-ghz-group/sub-1-ghz/f/sub-1-ghz-forum/382066/cc1101---don-t-know-the-correct-registers-configuration
 
     /* GPIO GD0 */
@@ -116,7 +116,7 @@ static const uint8_t furi_hal_subghz_preset_ook_650khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint8_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
 
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x0D}, // GD0 as async serial data output/input
@@ -160,7 +160,7 @@ static const uint8_t furi_hal_subghz_preset_2fsk_dev2_38khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint8_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
 
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x0D}, // GD0 as async serial data output/input
@@ -204,7 +204,7 @@ static const uint8_t furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint8_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
     /* GPIO GD0 */
     {CC1101_IOCFG0, 0x06},
 
@@ -243,7 +243,7 @@ static const uint8_t furi_hal_subghz_preset_msk_99_97kb_async_regs[][2] = {
     /* End  */
     {0, 0},
 };
-static const uint8_t furi_hal_subghz_preset_gfsk_9_99kb_async_regs[][2] = {
+static const uint16_t furi_hal_subghz_preset_gfsk_9_99kb_async_regs[][2] = {
 
     {CC1101_IOCFG0, 0x06}, //GDO0 Output Pin Configuration
     {CC1101_FIFOTHR, 0x47}, //RX FIFO and TX FIFO Thresholds
@@ -287,7 +287,8 @@ static const uint8_t furi_hal_subghz_preset_ook_async_patable[8] = {
     0x00};
 static const uint8_t furi_hal_subghz_preset_ook_async_patable_au[8] = {
     0x00,
-    0x37, // 12dBm 0xC0, 10dBm 0xC5, 7dBm 0xCD, 5dBm 0x86, 0dBm 0x50, -6dBm 0x37, -10dBm 0x26, -15dBm 0x1D, -20dBm 0x17, -30dBm 0x03
+//     0x37, // 12dBm 0xC0, 10dBm 0xC5, 7dBm 0xCD, 5dBm 0x86, 0dBm 0x50, -6dBm 0x37, -10dBm 0x26, -15dBm 0x1D, -20dBm 0x17, -30dBm 0x03
+    0xC0, // 12dBm 0xC0, 10dBm 0xC5, 7dBm 0xCD, 5dBm 0x86, 0dBm 0x50, -6dBm 0x37, -10dBm 0x26, -15dBm 0x1D, -20dBm 0x17, -30dBm 0x03
     0x00,
     0x00,
     0x00,
@@ -417,7 +418,7 @@ void furi_hal_subghz_load_preset(FuriHalSubGhzPreset preset) {
     furi_hal_subghz_preset = preset;
 }
 
-void furi_hal_subghz_load_registers(const uint8_t data[][2]) {
+void furi_hal_subghz_load_registers(const uint16_t data[][2]) {
     furi_hal_spi_acquire(&furi_hal_spi_bus_handle_subghz);
     cc1101_reset(&furi_hal_spi_bus_handle_subghz);
     uint32_t i = 0;
@@ -515,7 +516,7 @@ void furi_hal_subghz_rx() {
 }
 
 bool furi_hal_subghz_tx() {
-    if(furi_hal_subghz_regulation != SubGhzRegulationTxRx) return false;
+    // if(furi_hal_subghz_regulation != SubGhzRegulationTxRx) return false;
     furi_hal_spi_acquire(&furi_hal_spi_bus_handle_subghz);
     cc1101_switch_to_tx(&furi_hal_spi_bus_handle_subghz);
     furi_hal_spi_release(&furi_hal_spi_bus_handle_subghz);
@@ -546,12 +547,6 @@ uint8_t furi_hal_subghz_get_lqi() {
 }
 
 bool furi_hal_subghz_is_frequency_valid(uint32_t value) {
-    if(!(value >= 299999755 && value <= 348000335) &&
-       !(value >= 386999938 && value <= 464000000) &&
-       !(value >= 778999847 && value <= 928000000)) {
-        return false;
-    }
-
     return true;
 }
 
@@ -571,7 +566,7 @@ uint32_t furi_hal_subghz_set_frequency_and_path(uint32_t value) {
 
 bool furi_hal_subghz_is_tx_allowed(uint32_t value) {
     //checking regional settings
-    bool is_allowed = false;
+    bool is_allowed = true;
     switch(furi_hal_version_get_hw_region()) {
     case FuriHalVersionRegionEuRu:
         //433,05..434,79; 868,15..868,55
@@ -617,7 +612,7 @@ uint32_t furi_hal_subghz_set_frequency(uint32_t value) {
     if(furi_hal_subghz_is_tx_allowed(value)) {
         furi_hal_subghz_regulation = SubGhzRegulationTxRx;
     } else {
-        furi_hal_subghz_regulation = SubGhzRegulationOnlyRx;
+        furi_hal_subghz_regulation = SubGhzRegulationTxRx;
     }
 
     furi_hal_spi_acquire(&furi_hal_spi_bus_handle_subghz);
