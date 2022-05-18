@@ -1,6 +1,6 @@
 
 # [Flipper Zero Firmware](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/ReadMe.md) <= READ THIS READ ME
-
+- FLASH STOCK FIRST BEFORE UPDATING TO CUSTOM FIRMWARE
 # with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware)/[Unleashed](https://github.com/Eng1n33r/flipperzero-firmware/tree/v0.58.1-CodeGrabber) changes + plugins.
 
 Latest Updates:
@@ -10,6 +10,10 @@ Latest Updates:
 
 **Special Instructions:**
 - Download these files into the subghz/assets folder on your SD card. Edit the two `_map` files to contain your specific subghz (.SUB) files.
+- - Note 1: If you don't have a subghz/assets folder, you should ensure you have made at least one clean flash with stock firmware and your SD card installed in order to ensure the database structure is built, otherwise it will not exist for alternative forks.
+- - Note 2: /any is a special keyword signifying either /int (internal storage) or /ext (external storage).
+- - Note 3: the changes you are making to the `_map` files is to point to the location of the specific assets of the touchtunes folder as well as the universal RF map apps which you will have to develop or compile seperately and are not a part of this repo. 
+- - Note 4: /any is effectively root, so the folder structure should start "/any/subghz/assets" and not what is based on the repo below do not blindly copy the repo it will not work.
 - - [assets/resources/subghz/assets/universal_rf_map](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/universal_rf_map)
 - - [assets/resources/subghz/assets/touchtunes_map](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/touchtunes_map)
 - - [assets/resources/subghz/assets/setting_user](https://github.com/RogueMaster/flipperzero-firmware-wPlugins/blob/dev/assets/resources/subghz/assets/setting_user)
