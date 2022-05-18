@@ -4,9 +4,7 @@
 # with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware)/[Unleashed](https://github.com/Eng1n33r/flipperzero-firmware/tree/v0.58.1-CodeGrabber) changes + plugins.
 
 Latest Updates:
-- Fixed stopwatch sound options
-- Fixed random name generated for RAW and NFC/RFID reads to have date and time.
-- Merged new updates from main and for Spectrum Analyzer.
+- Loaded latest dev changes for megacode and Frequency Analyzer.
 
 **Special Instructions:**
 - Download these files into the subghz/assets folder on your SD card. Edit the two `_map` files to contain your specific subghz (.SUB) files.
