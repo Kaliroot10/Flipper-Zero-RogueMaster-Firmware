@@ -6,10 +6,14 @@
 ****This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.**
 
 Latest Updates:
+- Pulled latest DEV changes from 8a81b79
+- Rebuild assets on DFU in order to fix tv.ir issues
+- Fixed it so renamed flippers will show correctly over Bluetooth
+- No longer a dirty build.
 - Added some compiled builds with a rename for those that need it.
 - Removed BTE Fix and Mifare Classic changes breaking Nice Flor protocol. Thanks Eng1n33r.
-- Pulled Latest RTC changes from DEV E8DE94CA Release
-- Pulled Latest UI/UX changes from DEV 9C3F465A Release
+- Pulled Latest RTC changes from DEV e8de94c Release
+- Pulled Latest UI/UX changes from DEV 9c3f465 Release
 - AutoLock with PIN now works correctly! FYI, it will break connection to qFlipper/CLI on lock.
 - Reverted dev changes that break Frequency Analyzer on FreqAnalyzer file and Megacode. Hopefully this gets fixed.
 - Added Touchtunes/Universal RF updates and optimizations thanks to jimilinuxguy.
