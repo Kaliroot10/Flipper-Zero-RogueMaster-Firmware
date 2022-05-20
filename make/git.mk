@@ -6,7 +6,7 @@ BUILD_TIME		:= $(shell date '+%H:%M:%S' || echo 'unknown')
 VERSION			:= $(shell git describe --tags --abbrev=0 --exact-match 2>/dev/null || echo '0.58.1')
 GIT_DIRTY_BUILD := $(shell git diff --quiet ; echo $$?)
 
-GIT_DIRTY_SUFFIX :=
+GIT_DIRTY_SUFFIX := -UL
 ifeq (false, 1)
 	GIT_DIRTY_SUFFIX := -dirty
 endif
