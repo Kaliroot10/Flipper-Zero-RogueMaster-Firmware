@@ -97,7 +97,7 @@ static void furi_hal_version_set_name(const char* name) {
             furi_hal_version.device_name,
             FURI_HAL_VERSION_DEVICE_NAME_LENGTH,
             "xFlipper %s",
-            furi_hal_version.name);
+            furi_hal_version_get_name_ptr());
     } else {
         snprintf(furi_hal_version.device_name, FURI_HAL_VERSION_DEVICE_NAME_LENGTH, "xFlipper");
     }
@@ -276,6 +276,9 @@ uint32_t furi_hal_version_get_hw_timestamp() {
 
 const char* furi_hal_version_get_name_ptr() {
     return *furi_hal_version.name == 0x00 ? NULL : furi_hal_version.name;
+    // return "N00BY";
+    // return "CH33CH"; 
+    // return "CH0NG";
 }
 
 const char* furi_hal_version_get_device_name_ptr() {
