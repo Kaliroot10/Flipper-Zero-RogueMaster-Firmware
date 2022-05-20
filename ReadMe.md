@@ -3,8 +3,16 @@
 - FLASH STOCK FIRST BEFORE UPDATING TO CUSTOM FIRMWARE
 # with some [MuddleBox](https://github.com/MuddledBox/flipperzero-firmware) changes + plugins.
 
+****This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.**
+
 Latest Updates:
-- Loaded latest dev changes for megacode and Frequency Analyzer.
+- Added some compiled builds with a rename for those that need it.
+- Removed BTE Fix and Mifare Classic changes breaking Nice Flor protocol. Thanks Eng1n33r.
+- Pulled Latest RTC changes from DEV E8DE94CA Release
+- Pulled Latest UI/UX changes from DEV 9C3F465A Release
+- AutoLock with PIN now works correctly! FYI, it will break connection to qFlipper/CLI on lock.
+- Reverted dev changes that break Frequency Analyzer on FreqAnalyzer file and Megacode. Hopefully this gets fixed.
+- Added Touchtunes/Universal RF updates and optimizations thanks to jimilinuxguy.
 
 **Special Instructions:**
 - Download these files into the subghz/assets folder on your SD card. Edit the two `_map` files to contain your specific subghz (.SUB) files.
