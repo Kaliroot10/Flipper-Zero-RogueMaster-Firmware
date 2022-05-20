@@ -92,7 +92,7 @@ static FuriHalVersion furi_hal_version = {0};
 
 static void furi_hal_version_set_name(const char* name) {
     if(name != NULL) {
-        strlcpy(furi_hal_version.name, name, FURI_HAL_VERSION_ARRAY_NAME_LENGTH);
+        strlcpy(furi_hal_version.name, furi_hal_version_get_name_ptr(), FURI_HAL_VERSION_ARRAY_NAME_LENGTH);
         snprintf(
             furi_hal_version.device_name,
             FURI_HAL_VERSION_DEVICE_NAME_LENGTH,
