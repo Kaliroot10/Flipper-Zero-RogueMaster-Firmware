@@ -299,6 +299,58 @@ const FlipperApplication FLIPPER_APPS[] = {
 
 const size_t FLIPPER_APPS_COUNT = COUNT_OF(FLIPPER_APPS);
 
+const FlipperApplication FLIPPER_GAMES[] = {
+
+// #ifdef APP_RAYCAST_GAME
+//     {.app = raycast_game_app, .name = "Raycast Game", .stack_size = 4096, .icon = NULL},
+// #endif
+
+// #ifdef FLOOPPER_BLOOPPER
+//     {.app = floopper_bloopper,
+//      .name = "Floopper Bloopper",
+//      .stack_size = 1024,
+//      .icon = &A_Plugins_14,
+//      .flags = FlipperApplicationFlagDefault},
+// #endif
+
+#ifdef APP_FLAPPY_GAME
+    {.app = flappy_game_app, 
+	.name = "Flipper Flappy Bird", 
+	.stack_size = 1024, 
+	.icon = &A_Plugins_14
+	},
+#endif
+
+#ifdef APP_SNAKE_GAME
+    {.app = snake_game_app,
+     .name = "Snake Game",
+     .stack_size = 1024,
+     .icon = &A_Snake_14,
+//      .icon = &A_Plugins_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
+#ifdef APP_TETRIS_GAME
+    {.app = tetris_game_app,
+     .name = "Tetris Game",
+     .stack_size = 1024,
+     .icon = &A_Tetris_14,
+//      .icon = &A_Plugins_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
+#ifdef APP_ZOMBIEZ
+    {.app = zombiez_app,
+     .name = "Zombiez",
+     .stack_size = 2048,
+    .icon = &A_Plugins_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
+};
+
+const size_t FLIPPER_GAMES_COUNT = COUNT_OF(FLIPPER_GAMES);
+
 // On system start hooks
 const FlipperOnStartHook FLIPPER_ON_SYSTEM_START[] = {
     crypto_on_system_start,
@@ -360,14 +412,6 @@ const FlipperApplication FLIPPER_PLUGINS[] = {
      .flags = FlipperApplicationFlagDefault},
 #endif
 
-#ifdef APP_FLAPPY_GAME
-    {.app = flappy_game_app, 
-	.name = "Flipper Flappy Bird", 
-	.stack_size = 1024, 
-	.icon = &A_Plugins_14
-	},
-#endif
-
 #ifdef APP_MUSIC_PLAYER
     {.app = music_player_app,
      .name = "Music Player",
@@ -376,24 +420,12 @@ const FlipperApplication FLIPPER_PLUGINS[] = {
      .flags = FlipperApplicationFlagDefault},
 #endif
 
-#ifdef APP_SNAKE_GAME
-    {.app = snake_game_app,
-     .name = "Snake Game",
-     .stack_size = 1024,
-     .icon = &A_Plugins_14,
-     .flags = FlipperApplicationFlagDefault},
-#endif
-
 #ifdef APP_SPECTRUM_ANALYZER
     {.app = spectrum_analyzer_app, 
     .name = "Spectrum Analyzer", 
     .stack_size = 1024, 
-    .icon = &A_Plugins_14,
+    .icon = &A_SpectrumAnalyzer_14,
     .flags = FlipperApplicationFlagDefault},
-#endif
-
-#ifdef APP_TETRIS_GAME
-    {.app = tetris_game_app, .name = "Tetris Game", .stack_size = 1024, .icon = NULL},
 #endif
 
 #ifdef APP_JUKEBOX
@@ -409,27 +441,6 @@ const FlipperApplication FLIPPER_PLUGINS[] = {
      .stack_size = 4096,
      .icon = &A_MusicPlayer_14,
      .flags = FlipperApplicationFlagDefault},
-
-#ifdef APP_ZOMBIEZ
-    {.app = zombiez_app,
-     .name = "Zombiez",
-     .stack_size = 2048,
-    .icon = &A_Plugins_14,
-     .flags = FlipperApplicationFlagDefault},
-#endif
-
-
-// #ifdef APP_RAYCAST_GAME
-//     {.app = raycast_game_app, .name = "Raycast Game", .stack_size = 4096, .icon = NULL},
-// #endif
-
-// #ifdef FLOOPPER_BLOOPPER
-//     {.app = floopper_bloopper,
-//      .name = "Floopper Bloopper",
-//      .stack_size = 1024,
-//      .icon = &A_Plugins_14,
-//      .flags = FlipperApplicationFlagDefault},
-// #endif
 
 };
 
