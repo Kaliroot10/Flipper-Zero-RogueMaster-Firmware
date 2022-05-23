@@ -112,6 +112,7 @@ extern const Icon A_Tamagotchi_14;
 extern const Icon A_Tetris_14;
 extern const Icon A_TouchTunes_14;
 extern const Icon A_U2F_14;
+extern const Icon A_UniRFRemix_14;
 extern const Icon A_UniversalRemote_14;
 extern const Icon A_iButton_14;
 extern const Icon I_Detailed_chip_17x13;
