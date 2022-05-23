@@ -52,6 +52,7 @@ static const uint32_t subghz_frequencies[] = {
     0,
 };
 static const uint32_t subghz_hopper_frequencies[] = {
+    310000000,
     315000000,
     318000000,
     390000000,
