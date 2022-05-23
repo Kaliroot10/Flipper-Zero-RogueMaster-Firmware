@@ -326,7 +326,6 @@ const FlipperApplication FLIPPER_GAMES[] = {
      .name = "Snake",
      .stack_size = 1024,
      .icon = &A_Snake_14,
-//      .icon = &A_Plugins_14,
      .flags = FlipperApplicationFlagDefault},
 #endif
 
@@ -335,7 +334,6 @@ const FlipperApplication FLIPPER_GAMES[] = {
      .name = "Tetris",
      .stack_size = 1024,
      .icon = &A_Tetris_14,
-//      .icon = &A_Plugins_14,
      .flags = FlipperApplicationFlagDefault},
 #endif
 
