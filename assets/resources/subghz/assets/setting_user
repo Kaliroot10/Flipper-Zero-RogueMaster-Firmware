@@ -29,6 +29,7 @@ Frequency: 868350000
 Frequency: 915000000
 Frequency: 925000000
 Frequency: 928000000
+Hopper_frequency: 310000000
 Hopper_frequency: 312000000
 Hopper_frequency: 314000000
 Hopper_frequency: 315000000
