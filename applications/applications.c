@@ -58,6 +58,7 @@ extern int32_t clock_app(void *p);
 // extern int32_t raycast_game_app(void* p);
 extern int32_t spectrum_analyzer_app(void* p);
 extern int32_t flappy_game_app(void* p); 
+extern int32_t zombiez_app(void* p); 
 
 // On system start hooks declaration
 extern void bt_on_system_start();
@@ -233,17 +234,9 @@ const FlipperApplication FLIPPER_APPS[] = {
 
 #ifdef APP_UNIVERSALRF
      {.app = universal_rf_remote_app,
-     .name = "Universal SubGHz",
+     .name = "Sub-GHz Remote",
      .stack_size = 2048,
      .icon = &A_UniversalRemote_14,
-     .flags = FlipperApplicationFlagDefault},
-#endif
-
-#ifdef APP_JUKEBOX
-    {.app = jukebox_app,
-     .name = "Jukebox",
-     .stack_size = 2048,
-     .icon = &A_TouchTunes_14,
      .flags = FlipperApplicationFlagDefault},
 #endif
 
@@ -403,11 +396,28 @@ const FlipperApplication FLIPPER_PLUGINS[] = {
     {.app = tetris_game_app, .name = "Tetris Game", .stack_size = 1024, .icon = NULL},
 #endif
 
+#ifdef APP_JUKEBOX
+    {.app = jukebox_app,
+     .name = "TouchTunes Remote",
+     .stack_size = 2048,
+     .icon = &A_TouchTunes_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
     {.app = wav_player_app,
      .name = "Wav Player",
      .stack_size = 4096,
      .icon = &A_MusicPlayer_14,
      .flags = FlipperApplicationFlagDefault},
+
+#ifdef APP_ZOMBIEZ
+    {.app = zombiez_app,
+     .name = "Zombiez",
+     .stack_size = 2048,
+    .icon = &A_Plugins_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
 
 // #ifdef APP_RAYCAST_GAME
 //     {.app = raycast_game_app, .name = "Raycast Game", .stack_size = 4096, .icon = NULL},
