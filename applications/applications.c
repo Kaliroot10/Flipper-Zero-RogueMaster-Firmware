@@ -323,7 +323,7 @@ const FlipperApplication FLIPPER_GAMES[] = {
 
 #ifdef APP_SNAKE_GAME
     {.app = snake_game_app,
-     .name = "Snake Game",
+     .name = "Snake",
      .stack_size = 1024,
      .icon = &A_Snake_14,
 //      .icon = &A_Plugins_14,
@@ -332,7 +332,7 @@ const FlipperApplication FLIPPER_GAMES[] = {
 
 #ifdef APP_TETRIS_GAME
     {.app = tetris_game_app,
-     .name = "Tetris Game",
+     .name = "Tetris",
      .stack_size = 1024,
      .icon = &A_Tetris_14,
 //      .icon = &A_Plugins_14,
