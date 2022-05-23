@@ -39,15 +39,12 @@ extern int32_t passport_app(void* p);
 extern int32_t scened_app(void* p);
 extern int32_t storage_test_app(void* p);
 extern int32_t subghz_app(void* p);
-extern int32_t jukebox_app(void *p);
-extern int32_t universal_rf_remote_app(void *p);
 extern int32_t usb_mouse_app(void* p);
 extern int32_t usb_test_app(void* p);
 extern int32_t vibro_test_app(void* p);
 extern int32_t bt_hid_app(void* p);
 extern int32_t battery_test_app(void* p);
 extern int32_t text_box_test_app(void* p);
-extern int32_t file_browser_app(void* p);
 
 // Plugins
 extern int32_t music_player_app(void* p);
@@ -58,7 +55,11 @@ extern int32_t clock_app(void *p);
 // extern int32_t raycast_game_app(void* p);
 extern int32_t spectrum_analyzer_app(void* p);
 extern int32_t flappy_game_app(void* p); 
+extern int32_t file_browser_app(void* p);
 extern int32_t zombiez_app(void* p); 
+extern int32_t jukebox_app(void *p);
+extern int32_t universal_rf_remote_app(void *p);
+extern int32_t unirfremix_app(void *p);
 
 // On system start hooks declaration
 extern void bt_on_system_start();
@@ -232,11 +233,11 @@ const FlipperApplication FLIPPER_APPS[] = {
      .flags = FlipperApplicationFlagDefault},
 #endif
 
-#ifdef APP_UNIVERSALRF
-     {.app = universal_rf_remote_app,
-     .name = "Sub-GHz Remote",
+#ifdef APP_UNIRFREMIX
+     {.app = unirfremix_app,
+     .name = "Sub-GHz Remote Remix",
      .stack_size = 2048,
-     .icon = &A_UniversalRemote_14,
+     .icon = &A_UniRFRemix_14,
      .flags = FlipperApplicationFlagDefault},
 #endif
 
@@ -415,6 +416,14 @@ const FlipperApplication FLIPPER_PLUGINS[] = {
      .name = "Music Player",
      .stack_size = 2048,
      .icon = &A_MusicPlayer_14,
+     .flags = FlipperApplicationFlagDefault},
+#endif
+
+#ifdef APP_UNIVERSALRF
+     {.app = universal_rf_remote_app,
+     .name = "Sub-GHz Remote",
+     .stack_size = 2048,
+     .icon = &A_UniversalRemote_14,
      .flags = FlipperApplicationFlagDefault},
 #endif
 
