@@ -235,7 +235,7 @@ const FlipperApplication FLIPPER_APPS[] = {
 
 #ifdef APP_UNIRFREMIX
      {.app = unirfremix_app,
-     .name = "Sub-GHz Remote Remix",
+     .name = "SubRemoteRemix",
      .stack_size = 2048,
      .icon = &A_UniRFRemix_14,
      .flags = FlipperApplicationFlagDefault},
