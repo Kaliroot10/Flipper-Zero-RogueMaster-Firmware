@@ -6,18 +6,9 @@
 <b>Latest Updates:</b>
 
 - Known Issues:			`FAP Loader`, `Chess` & `Chip8` (No Controls)
-- Assets: Includes New Dolphin Animations: [P0liwhirl (By Panzer00Z)]
-- A few more P0kem0n assets for RFID and iButton by @Panzer00Z
-- Updated IR assets thanks to @Amec0e and [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
-- Fit extra element on lfrfid screen - from [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
-- bt and lfrfid tune debug apps excluded from releases - from [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
-- Assets: Includes New Dolphin Animations: [RogueMaster CFW Animation (By Kuronons)]
-- Assets: Includes New Dolphin Animations: [Nyan Cat (By Haseo)]
-- Assets: Includes New Dolphin Animations: [L (By Kuronons)]
-- Assets: Includes New Dolphin Animations: [Laughing Man (By Kuronons)]
-- Assets: Includes New Dolphin Animations: [B0ws3r (By Haseo)]
-- Assets: Includes New Dolphin Animations: [Kuronons Black Flags Collection VOL 2 (9 Animations)(By Kuronons)]
 - Additional 4 NFC Keys added by @Foul
+- Additional screen added for after install boot with the discord code thanks to @E_Surge
+- Updates to SubGHz Playlist  and change to Unknown Region from @darmiel and @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
