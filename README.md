@@ -8,7 +8,8 @@
 - Known Issues:			`FAP Loader`, `Chess` & `Chip8` (No Controls)
 - Additional 4 NFC Keys added by @Foul
 - Additional screen added for after install boot with the discord code thanks to @E_Surge
-- Updates to SubGHz Playlist  and change to Unknown Region from @darmiel and @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Updates to SubGHz Playlist from @darmiel and @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Change to Unknown SubGHz Region by @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
