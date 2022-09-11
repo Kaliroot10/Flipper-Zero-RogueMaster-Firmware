@@ -7,7 +7,7 @@
 
 - Known Issues:			`FAP Loader`, `Chess` & `Chip8` (No Controls)
 - Additional 4 NFC Keys added by @Foul
-- Additional screen added for after install boot with the discord code thanks to @E_Surge
+- Additional screen added for after install boot with the discord code thanks to @ESurge
 - Updates to SubGHz Playlist from @darmiel and thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Change to Unknown SubGHz Region by @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Add mpu, fix keeloq, lower stack sizes for apps - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
