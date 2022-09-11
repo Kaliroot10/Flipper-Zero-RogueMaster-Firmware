@@ -13,7 +13,7 @@ Min butthurt: 0
 Max butthurt: 14
 Min level: 1
 Max level: 30
-Weight: 6
+Weight: 9
 
 Name: L1_B0ws3r_128x64
 Min butthurt: 0
@@ -22,19 +22,47 @@ Min level: 1
 Max level: 30
 Weight: 6
 
-Name: L1_LaughingMan_128x64
+Name: L1_Thanks4fish_128x64
 Min butthurt: 0
 Max butthurt: 14
 Min level: 1
 Max level: 30
 Weight: 3
 
+Name: Kuronons_Weyland_128x64
+Min butthurt: 0
+Max butthurt: 14
+Min level: 1
+Max level: 30
+Weight: 2
+
+Name: Kuronons_OCP_128x64
+Min butthurt: 0
+Max butthurt: 14
+Min level: 1
+Max level: 30
+Weight: 2
+
+Name: Kuronons_Skynet_128x64
+Min butthurt: 0
+Max butthurt: 14
+Min level: 1
+Max level: 30
+Weight: 2
+
+Name: L1_LaughingMan_128x64
+Min butthurt: 0
+Max butthurt: 14
+Min level: 1
+Max level: 30
+Weight: 2
+
 Name: Kuronons_L_128x64
 Min butthurt: 0
 Max butthurt: 14
 Min level: 1
 Max level: 30
-Weight: 3
+Weight: 2
 
 Name: Kuronons_BlackFlags_Boze_128x64
 Min butthurt: 0
