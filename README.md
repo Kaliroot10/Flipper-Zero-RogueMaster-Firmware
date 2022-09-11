@@ -10,6 +10,7 @@
 - Additional screen added for after install boot with the discord code thanks to @E_Surge
 - Updates to SubGHz Playlist from @darmiel and thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Change to Unknown SubGHz Region by @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Add mpu, fix keeloq, lower stack sizes for apps - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
