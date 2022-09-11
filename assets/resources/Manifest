@@ -1,5 +1,5 @@
 V:0
-T:1662880797
+T:1662905691
 D:apps
 D:badusb
 D:dolphin
@@ -2396,11 +2396,11 @@ F:193f5e3a68cb351dcbd8eeb91825b476:410:subghz/unirf/universal_rf_map.txt
 D:u2f/assets
 F:7e11e688e39034bbb9d88410044795e1:365:u2f/assets/cert.der
 F:f60b88c20ed479ed9684e249f7134618:264:u2f/assets/cert_key.u2f
-D:update/0.66.2-0911-RM.B
-F:20060b61603e403865c77380e28c131a:816769:update/0.66.2-0911-RM.B/flipper-z-f7-full-RM420.dfu
-F:0da3f3af6cf77ccd75815933f16be367:102737:update/0.66.2-0911-RM.B/flipper-z-f7-updater-RM420.bin
-F:7ffb313e14bf9a9d3e1831c09458140f:3584:update/0.66.2-0911-RM.B/resources.tar
-F:600bb08dc26789c516541ce4c4a719e6:1616:update/0.66.2-0911-RM.B/splash.bin
-F:a909c83418f8748854953355b9b833c7:115084:update/0.66.2-0911-RM.B/stm32wb5x_BLE_Stack_light_fw.bin
-F:af6b2aa39b118ae529b96d947c405755:1630:update/0.66.2-0911-RM.B/update.fuf
+D:update/0.66.2-0911-RM.Bv3
+F:f7f56ff811acc9b5dc45e2daf584ec6b:816977:update/0.66.2-0911-RM.Bv3/flipper-z-f7-full-RM420.dfu
+F:be20f022e6c363340170e87c5bf735c5:102929:update/0.66.2-0911-RM.Bv3/flipper-z-f7-updater-RM420.bin
+F:7ffb313e14bf9a9d3e1831c09458140f:3584:update/0.66.2-0911-RM.Bv3/resources.tar
+F:600bb08dc26789c516541ce4c4a719e6:1616:update/0.66.2-0911-RM.Bv3/splash.bin
+F:a909c83418f8748854953355b9b833c7:115084:update/0.66.2-0911-RM.Bv3/stm32wb5x_BLE_Stack_light_fw.bin
+F:cd4999dd49954bbb8d3804663b57a5ef:1630:update/0.66.2-0911-RM.Bv3/update.fuf
 F:a9a90a7e7e60e3add602929e5b38e83b:94508:wav_player/sonicscrewdriver.wav
