@@ -146,6 +146,3 @@ standard names. */
 #define configOVERRIDE_DEFAULT_TICK_CONFIGURATION \
     1 /* required only for Keil but does not hurt otherwise */
 
-#define traceTASK_SWITCHED_IN()                                     \
-    extern void furi_hal_mpu_set_stack_protection(uint32_t* stack); \
-    furi_hal_mpu_set_stack_protection((uint32_t*)pxCurrentTCB->pxStack)
