@@ -16,7 +16,7 @@
 - Fix subghz brute plugin - save was generating broken files, many other fixes and improvements - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Mousejacker fixes, allow exit from app when it stuck at unable to connect with receiver, removed blank screen while executing duckyscript - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Assets: Includes New Dolphin Animations:  [Thanks for all the fish (By qqMajiKpp)] & [OCP, Skynet and Weyland (By Kuronons)]
-- Reverted "Add mpu" due to issues
+- V2: Reverted "Add mpu" due to issues
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
