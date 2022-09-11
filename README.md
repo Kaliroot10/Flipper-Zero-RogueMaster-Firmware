@@ -11,6 +11,10 @@
 - Updates to SubGHz Playlist from @darmiel and thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Change to Unknown SubGHz Region by @xMasterX [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 - Add mpu, fix keeloq, lower stack sizes for apps - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Include CAME 12 bits bruteforce on 307.80Mhz for SubGHz Bruteforcer (by @enovella) - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Fix Subghz playlist unable to exit when repeat set to infinity - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Fix subghz brute plugin - save was generating broken files, many other fixes and improvements - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Mousejacker fixes, allow exit from app when it stuck at unable to connect with receiver, removed blank screen while executing duckyscript - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
