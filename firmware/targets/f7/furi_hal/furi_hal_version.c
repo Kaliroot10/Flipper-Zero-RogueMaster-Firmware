@@ -156,7 +156,7 @@ static void furi_hal_version_set_name(const char* name) {
 
     // BLE Mac address
     uint32_t udn = LL_FLASH_GetUDN();
-    udn = (uint32_t)*name;
+    udn = *((uint32_t*)name);
     uint32_t company_id = LL_FLASH_GetSTCompanyID();
     uint32_t device_id = LL_FLASH_GetDeviceID();
     furi_hal_version.ble_mac[0] = (uint8_t)(udn & 0x000000FF);
@@ -388,7 +388,7 @@ const uint8_t* furi_hal_version_uid() {
     furi_hal_version.cname = furi_hal_version_get_name_ptr();
     if(furi_hal_version.cname != NULL && strlen(furi_hal_version.cname) >= 1 &&
        strlen(furi_hal_version.cname) <= 8) {
-        return (const uint8_t*)((uint32_t)*furi_hal_version_get_name_ptr());
+        return (const uint8_t*)&(*((uint32_t*)furi_hal_version_get_name_ptr()));
     }
     return (const uint8_t*)UID64_BASE;
 }

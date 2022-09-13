@@ -7,6 +7,10 @@
 
 - Known Issues:			`FAP Loader`, `Chess` & `Chip8` (No Controls)
 - Assets: Includes New Dolphin Animations: [Mario (By Haseo)], [Umbrella (By Haseo)], [Trioptimum (By qqMajiKpp)] & [Tyrell & Cyberdyne (By Kuronons)]
+- Arkanoid: Fix - dont allow user to jump after start (by @TQMatvey) & Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Fix subghz starline protocol - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Fix Custom flipper names - Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
+- Added Brazilian Portuguese keyboard layout (By @web-mancha) & Thanks to [Unleashed/xMasterX](https://github.com/Eng1n33r/flipperzero-firmware)
 
 <table width="100%" border="0" cellspacing="0">
   <tr> <td colspan=2> <h3>This software is for experimental purposes only and is not meant for any illegal activity/purposes. We do not condone illegal activity and strongly encourage keeping transmissions to legal/valid uses allowed by law.</h3> </td> </tr>
